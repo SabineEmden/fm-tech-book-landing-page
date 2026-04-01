@@ -1,3 +1,23 @@
+/* convert variable fonts online: https://dplugins.com/convert-variable-fonts-online/ */
+@font-face {
+  font-family: "Martian Mono";
+  font-weight: 100 800;
+  font-width: 75% 112.5%;
+  font-display: swap;
+  src: url("./assets/fonts/martian-mono/MartianMono-VariableFont_wdth_wght.woff2")
+    format("woff2-variations");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 900;
+  font-display: swap;
+  src:
+    local("Inter"),
+    url("./assets/fonts/inter/Inter-VariableFont_opsz_wght.woff2")
+      format("woff2-variations");
+}
+
 :root {
   --neutral-900: #062630;
   --neutral-700: #385159;
@@ -32,4 +52,8 @@
   --radius-12: 0.75rem; /* 12px */
   --radius-16: 1rem; /* 16px */
   --radius-20: 1.25rem; /* 20px */
+}
+
+body {
+  font-family: "Inter", sans-serif;
 }
