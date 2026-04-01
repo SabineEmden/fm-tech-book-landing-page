@@ -80,6 +80,8 @@
 
 body {
   min-height: 100svh;
+  background-color: var(--neutral-0);
+  color: var(--neutral-700);
   font-family: "Inter", sans-serif;
   font-size: var(--font-size-s);
   font-weight: 400;
@@ -109,6 +111,7 @@ p {
 h1,
 h2,
 h3 {
+  color: var(--neutral-900);
   font-family: "Martian Mono", monospace;
   text-wrap: balance;
 }
