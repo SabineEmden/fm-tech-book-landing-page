@@ -104,9 +104,9 @@ h3 {
   overflow-wrap: break-word;
 }
 
-p {
+/* p {
   text-wrap: pretty;
-}
+} */
 
 h1,
 h2,
@@ -139,6 +139,7 @@ h3 {
 
 .icon {
   display: inline-block;
+  height: 1.5rem;
   aspect-ratio: 1;
 }
 
@@ -194,13 +195,28 @@ h3 {
   --btn-outline: var(--neutral-0);
 }
 
-.btn__icon {
-  height: 1.5rem;
+.five-stars {
+  display: flex;
+}
+
+.rating {
+  display: flex;
+  gap: var(--spacing-150);
+  align-items: center;
+  font-family: "Martian Mono", monospace;
+  font-size: var(--font-size-xxs);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.rating__avatars img {
+  height: 2.5rem;
 }
 
 /* SECTION: READY */
 .ready {
   background-color: var(--neutral-900);
+  color: var(--neutral-0);
 }
 
 /* TABLET VIEW */
