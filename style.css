@@ -29,8 +29,8 @@
   --light-salmon-50: #fff5ef;
   /* See: https://fossheim.io/writing/posts/css-text-gradient/ */
   --text-gradient: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
-  --gradient: linear-gradient(90deg, #ffe2d1 0%, 3fff5ef 100%);
-
+  --gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  --gradient-alt: linear-gradient(90deg, #385159 0%, #062630 100%);
   --font-size-xxs: 0.875rem; /* 14px */
   --font-size-xs: 1rem; /* 16px */
   --font-size-s: 1.25rem; /* 20px */
@@ -142,6 +142,7 @@ h3 {
   aspect-ratio: 1;
 }
 
+/* See https://www.a11y-collective.com/blog/visually-hidden/ */
 .sr-only {
   border: 0;
   clip-path: inset(50%);
@@ -157,6 +158,8 @@ h3 {
 .btn {
   --btn-color: var(--neutral-900);
   --btn-background-color: var(--light-salmon-50);
+  --btn-background-hover: var(--gradient);
+  --btn-outline: var(--neutral-700);
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-200);
@@ -174,9 +177,21 @@ h3 {
   padding: var(--spacing-250) var(--spacing-300);
 }
 
+.btn:hover,
+.btn:focus {
+  background: var(--btn-background-hover);
+}
+
+.btn:focus {
+  outline: 2px solid var(--btn-outline);
+  outline-offset: var(--spacing-050);
+}
+
 .btn--alt {
   --btn-color: var(--neutral-0);
   --btn-background-color: transparent;
+  --btn-background-hover: var(--gradient-alt);
+  --btn-outline: var(--neutral-0);
 }
 
 .btn__icon {
