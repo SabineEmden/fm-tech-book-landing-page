@@ -44,6 +44,7 @@
   --spacing-075: 0.375rem; /* 6px */
   --spacing-100: 0.5rem; /* 8px */
   --spacing-150: 0.75rem; /* 12px */
+  --spacing-175: 0.875rem; /* 14px */
   --spacing-200: 1rem; /* 16px */
   --spacing-250: 1.25rem; /* 20px */
   --spacing-300: 1.5rem; /* 24px */
@@ -137,6 +138,12 @@ h3 {
   letter-spacing: -1px;
 }
 
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+
 .icon {
   display: inline-block;
   height: 1.5rem;
@@ -213,6 +220,33 @@ h3 {
   height: 2.5rem;
 }
 
+/* See https://web.dev/articles/creative-list-styling */
+.checklist {
+  --checklist-gap: var(--spacing-175);
+  --checklist-marker: 1.75rem;
+}
+
+.checklist__item {
+  display: flex;
+  align-items: center;
+  gap: var(--checklist-gap);
+}
+
+.checklist__item::before {
+  content: url(./assets/images/icon-check.svg);
+  width: var(--checklist-marker);
+  height: var(--checklist-marker);
+}
+
+.checklist__item + .checklist__item {
+  margin-top: 1rem; /* TODO: Changes to 24px on tablet for section read-together but not for section membership */
+}
+
+.checklist--small {
+  --checklist-gap: var(--spacing-150);
+  --checklist-marker: 1.5rem;
+}
+
 /* SECTION: READY */
 .ready {
   background-color: var(--neutral-900);
@@ -226,5 +260,9 @@ h3 {
     --font-size-l: 2.125rem; /* 34px */
     --font-size-xl: 3.125rem; /* 50px */
     --font-size-xxl: 3.875rem; /* 62px */
+  }
+
+  .checklist__item + .checklist__item {
+    margin-top: 1.5rem; /* TODO: section membership stays at 16px */
   }
 }
