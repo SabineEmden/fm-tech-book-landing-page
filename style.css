@@ -247,6 +247,16 @@ ol[role="list"] {
   --checklist-marker: 1.5rem;
 }
 
+/* HEADER */
+.header {
+  max-width: 74rem;
+  padding: var(--spacing-300) var(--spacing-200) 0;
+}
+
+.header__logo {
+  height: 2.25rem;
+}
+
 /* SECTION: READY */
 .ready {
   background-color: var(--neutral-900);
@@ -260,6 +270,10 @@ ol[role="list"] {
     --font-size-l: 2.125rem; /* 34px */
     --font-size-xl: 3.125rem; /* 50px */
     --font-size-xxl: 3.875rem; /* 62px */
+  }
+
+  .header {
+    padding: var(--spacing-400) var(--spacing-400) 0;
   }
 
   .checklist__item + .checklist__item {
