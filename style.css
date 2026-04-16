@@ -287,6 +287,13 @@ ol[role="list"] {
   padding-bottom: var(--spacing-1000);
 }
 
+.hero__heading {
+  background-image: var(--text-gradient);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
 .hero__text {
   margin-bottom: var(--spacing-400);
 }
