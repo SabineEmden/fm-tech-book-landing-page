@@ -347,6 +347,15 @@ ol[role="list"] {
     gap: var(--spacing-1000);
   }
 
+  /* COMPONENTS */
+  .checklist {
+    --checklist-margin: var(--spacing-300);
+  }
+
+  .checklist--small {
+    --checklist-margin: var(--spacing-200);
+  }
+
   /* HEADER */
   .header {
     padding-top: var(--spacing-400);
@@ -360,10 +369,6 @@ ol[role="list"] {
   .hero__image {
     border-radius: var(--radius-10);
     box-shadow: -5.21px 5.21px var(--box-shadow-color);
-  }
-
-  .checklist__item + .checklist__item {
-    margin-top: 1.5rem; /* TODO: section membership stays at 16px */
   }
 }
 
