@@ -204,7 +204,7 @@ ol[role="list"] {
   border: 2px solid var(--btn-color);
   border-radius: var(--radius-8);
   padding: var(--spacing-250) var(--spacing-250);
-  width: 23.75rem; /* 380px */
+  max-width: 23.75rem; /* 380px */
 }
 
 .btn:hover,
@@ -246,6 +246,7 @@ ol[role="list"] {
 .checklist {
   --checklist-gap: var(--spacing-175);
   --checklist-marker: 1.75rem;
+  --checklist-margin: var(--spacing-200);
 }
 
 .checklist__item {
@@ -261,7 +262,9 @@ ol[role="list"] {
 }
 
 .checklist__item + .checklist__item {
-  margin-top: 1rem; /* TODO: Changes to 24px on tablet for section read-together but not for section membership */
+  margin-top: var(
+    --checklist-margin
+  ); /* TODO: Changes to 24px on tablet for section read-together but not for section membership */
 }
 
 .checklist--small {
@@ -306,6 +309,17 @@ ol[role="list"] {
   border-radius: var(--radius-6);
   overflow: hidden;
   box-shadow: -2.54px 2.54px var(--box-shadow-color);
+}
+
+/* READ TOGETHER SECTION */
+.read-together {
+  display: grid;
+  gap: var(--spacing-500);
+}
+
+.read-together__image {
+  border-radius: var(--radius-12);
+  overflow: hidden;
 }
 
 /* SECTION: READY */
