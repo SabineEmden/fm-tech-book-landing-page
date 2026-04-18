@@ -170,6 +170,10 @@ ol[role="list"] {
   aspect-ratio: 1;
 }
 
+/* .image {
+  object-fit: cover;
+} */
+
 /* See https://www.a11y-collective.com/blog/visually-hidden/ */
 .sr-only {
   border: 0;
@@ -262,9 +266,7 @@ ol[role="list"] {
 }
 
 .checklist__item + .checklist__item {
-  margin-top: var(
-    --checklist-margin
-  ); /* TODO: Changes to 24px on tablet for section read-together but not for section membership */
+  margin-top: var(--checklist-margin);
 }
 
 .checklist--small {
@@ -320,6 +322,13 @@ ol[role="list"] {
 .read-together__image {
   border-radius: var(--radius-12);
   overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.read-together__image img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
 }
 
 /* SECTION: READY */
@@ -369,6 +378,11 @@ ol[role="list"] {
   .hero__image {
     border-radius: var(--radius-10);
     box-shadow: -5.21px 5.21px var(--box-shadow-color);
+  }
+
+  /* READ TOGETHER SECTION */
+  .read-together__image {
+    border-radius: var(--radius-20);
   }
 }
 
