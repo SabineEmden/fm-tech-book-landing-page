@@ -100,14 +100,14 @@ body {
 header,
 section,
 footer {
-  max-width: 74rem;
+  max-width: 78rem;
   padding: 0 var(--spacing-200);
 }
 
 main {
   display: grid;
   gap: var(--spacing-800);
-  max-width: 74rem;
+  max-width: 78rem;
 }
 
 img,
@@ -390,15 +390,30 @@ ol[role="list"] {
     gap: var(--spacing-1500);
   }
 
+  /* HERO SECTION */
   .hero {
     grid-column: span 2;
     display: grid;
     grid-template-columns: subgrid;
+    gap: var(--spacing-1000);
     padding-top: var(--spacing-1000);
   }
 
   .hero__image {
     border-radius: var(--radius-8);
     box-shadow: -4px 4px var(--box-shadow-color);
+  }
+
+  /* READ TOGETHER SECTION */
+  .read-together {
+    grid-column: span 2;
+    grid-template-columns: subgrid;
+    gap: var(--spacing-1000);
+  }
+
+  .read-together__image {
+    grid-row: 1;
+    grid-column: 1;
+    border-radius: var(--radius-16);
   }
 }
