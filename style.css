@@ -170,9 +170,11 @@ ol[role="list"] {
   aspect-ratio: 1;
 }
 
-/* .image {
+.image {
+  width: 100%;
   object-fit: cover;
-} */
+  aspect-ratio: 1;
+}
 
 /* See https://www.a11y-collective.com/blog/visually-hidden/ */
 .sr-only {
@@ -322,12 +324,6 @@ ol[role="list"] {
 .read-together__image {
   border-radius: var(--radius-12);
   overflow: hidden;
-  aspect-ratio: 1;
-}
-
-.read-together__image img {
-  width: 100%;
-  object-fit: cover;
   aspect-ratio: 1;
 }
 
