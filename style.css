@@ -384,6 +384,20 @@ ol[role="list"] {
     padding-top: var(--spacing-800);
   }
 
+  .hero::before {
+    top: calc(-2.25rem - var(--spacing-400));
+  }
+
+  .hero::after {
+    content: "";
+    background-image: url(./assets/images/pattern-glow.svg);
+    background-position: bottom -542px right -542px;
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+
   .hero__image {
     border-radius: var(--radius-10);
     box-shadow: -5.21px 5.21px var(--box-shadow-color);
