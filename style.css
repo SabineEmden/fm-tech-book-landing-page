@@ -292,6 +292,19 @@ ol[role="list"] {
   gap: var(--spacing-800);
   padding-top: var(--spacing-600);
   padding-bottom: var(--spacing-1000);
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  background-color: var(--neutral-100);
+  background-image: url(./assets/images/pattern-light-bg.svg);
+  position: absolute;
+  top: calc(-2.25rem - var(--spacing-300));
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .hero__heading {
