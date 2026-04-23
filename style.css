@@ -167,7 +167,7 @@ ol[role="list"] {
 }
 
 .image {
-  width: 100%;
+  /* width: 100%; */
   object-fit: cover;
   aspect-ratio: 1;
 }
@@ -304,7 +304,7 @@ ol[role="list"] {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  z-index: -1;
+  z-index: -2;
 }
 
 .hero__heading {
@@ -352,7 +352,7 @@ ol[role="list"] {
 }
 
 /* TABLET VIEW */
-@media (width >= 48rem) {
+@media (width >= 40rem) {
   :root {
     --font-size-xs: 1.125rem; /* 18px */
     --font-size-l: 2.125rem; /* 34px */
@@ -420,7 +420,7 @@ ol[role="list"] {
 }
 
 /* DESKTOP VIEW */
-@media (width >= 90rem) {
+@media (width >= 64rem) {
   /* DESKTOP: BASELINE STYLES */
   main {
     grid-template-columns: 1fr 1fr;
