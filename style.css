@@ -444,13 +444,30 @@ em {
     box-shadow: -5.21px 5.21px var(--box-shadow-color);
   }
 
-  /* TABLET: READ TOGETHER SECTION */
+  /* TABLET: READ TOGETHER & NOT AVERAGE SECTIONS */
+  .read-together__image,
+  .not-average__image {
+    border-radius: var(--radius-20);
+  }
+
   .read-together__heading {
     margin-bottom: var(--spacing-400);
   }
 
-  .read-together__image {
-    border-radius: var(--radius-20);
+  .not-average {
+    position: relative;
+  }
+
+  .not-average::after {
+    content: "";
+    background-image: url(./assets/images/logos-tech.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 9rem;
+    aspect-ratio: 0.87;
+    right: var(--spacing-400);
+    bottom: var(--spacing-400);
   }
 }
 
@@ -476,16 +493,25 @@ em {
     box-shadow: -4px 4px var(--box-shadow-color);
   }
 
-  /* DESKTOP: READ TOGETHER SECTION */
-  .read-together {
+  /* DESKTOP: READ TOGETHER & NOT AVERAGE SECTIONS */
+  .read-together,
+  .not-average {
     grid-column: span 2;
     grid-template-columns: subgrid;
     gap: inherit;
   }
 
+  .read-together__image,
+  .not-average__image {
+    border-radius: var(--radius-16);
+  }
+
   .read-together__image {
     grid-row: 1;
     grid-column: 1;
-    border-radius: var(--radius-16);
+  }
+
+  .not-average::after {
+    left: 46.5%;
   }
 }
