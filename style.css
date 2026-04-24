@@ -129,7 +129,7 @@ h2,
 h3 {
   color: var(--neutral-900);
   font-family: "Martian Mono", monospace;
-  text-wrap: balance;
+  /* text-wrap: balance; */
   margin-bottom: var(--spacing-300);
 }
 
@@ -158,6 +158,11 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
   padding: 0;
+}
+
+em {
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* UTILITIES */
@@ -336,17 +341,39 @@ ol[role="list"] {
   aspect-ratio: auto;
 }
 
-/* READ TOGETHER SECTION */
-.read-together {
+/* READ TOGETHER & NOT AVERAGE SECTIONS */
+.read-together,
+.not-average {
   display: grid;
   align-items: center;
   gap: var(--spacing-500);
 }
 
-.read-together__image {
+.read-together__image,
+.not-average__image {
   border-radius: var(--radius-12);
   overflow: hidden;
   aspect-ratio: 1;
+}
+
+.not-average__text {
+  max-width: 70ch;
+}
+
+.circle {
+  position: relative;
+}
+
+.circle::after {
+  content: "";
+  background-image: url(./assets/images/pattern-circle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: calc(var(--spacing-025) * -1);
+  bottom: calc(var(--spacing-025) * -1);
+  left: calc(var(--spacing-150) * -1);
+  right: calc(var(--spacing-200) * -1);
 }
 
 /* SECTION: READY */
