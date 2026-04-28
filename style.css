@@ -514,6 +514,16 @@ em {
     gap: var(--spacing-600);
     padding: var(--spacing-1000) var(--spacing-400);
   }
+
+  .numbered-list {
+    gap: var(--spacing-500);
+  }
+
+  .numbered-list__item::before {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: var(--spacing-400);
+  }
 }
 
 /* DESKTOP VIEW */
@@ -565,9 +575,26 @@ em {
     grid-column: span 2;
     align-items: center;
     gap: var(--spacing-800);
+    padding: var(--spacing-1000) var(--spacing-800);
   }
 
   .journey__heading {
     text-align: center;
+  }
+
+  .numbered-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-400);
+  }
+
+  .numbered-list__item {
+    position: relative;
+  }
+
+  .numbered-list__item:not(:last-child)::after {
+    content: url(./assets/images/pattern-arrow.svg);
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
