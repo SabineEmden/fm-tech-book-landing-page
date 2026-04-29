@@ -415,6 +415,66 @@ em {
   margin-bottom: var(--spacing-200);
 }
 
+/* MEMBERSHIP SECTION */
+.membership {
+  max-width: 61rem;
+}
+
+.membership__options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: var(--spacing-300);
+  list-style: none;
+  padding: 0;
+}
+
+.membership__item {
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-8);
+  padding: var(--spacing-300);
+}
+
+.membership__item .btn {
+  width: 100%;
+  max-width: none;
+}
+
+.membership__item--featured {
+  position: relative;
+  overflow: hidden;
+}
+
+.membership__item--featured::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: no-repeat url(./assets/images/pattern-glow.svg) bottom -600px
+    right -600px var(--neutral-100);
+}
+
+.membership__price {
+  display: flex;
+  gap: var(--spacing-100);
+  align-items: center;
+  padding-bottom: var(--spacing-300);
+  border-bottom: 1px solid var(--neutral-200);
+  margin-bottom: var(--spacing-300);
+}
+
+.membership__price strong {
+  font-family: "Martian Mono", monospace;
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: var(--neutral-900);
+}
+
+.membership__checklist {
+  margin-bottom: var(--spacing-400);
+}
+
 /* SECTION: READY */
 .ready {
   background-color: var(--neutral-900);
