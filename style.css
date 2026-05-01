@@ -289,7 +289,7 @@ em {
   height: 2.25rem;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   display: grid;
   align-items: center;
@@ -342,7 +342,7 @@ em {
   aspect-ratio: auto;
 }
 
-/* READ TOGETHER & NOT AVERAGE SECTIONS */
+/* READ TOGETHER & NOT AVERAGE */
 .read-together,
 .not-average {
   display: grid;
@@ -416,7 +416,7 @@ em {
   margin-bottom: var(--spacing-200);
 }
 
-/* MEMBERSHIP SECTION */
+/* MEMBERSHIP & TESTIMONIAL */
 
 .membership__options {
   display: grid;
@@ -480,7 +480,6 @@ em {
   margin-bottom: var(--spacing-400);
 }
 
-/* TESTIMONIAL */
 .testimonial__container {
   display: flex;
   flex-direction: column;
@@ -491,10 +490,44 @@ em {
   font-size: var(--font-size-l);
 }
 
-/* SECTION: READY */
+/* READY */
 .ready {
-  background-color: var(--neutral-900);
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--neutral-0);
+  padding: var(--spacing-600) 0 var(--spacing-800);
+  position: relative;
+  max-width: 47rem;
+}
+
+.ready::before {
+  content: "";
+  background-color: var(--neutral-900);
+  background-image: url(./assets/images/pattern-dark-bg.svg);
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* See: https://css-tricks.com/full-bleed/ */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  z-index: -1;
+  border-top-left-radius: var(--radius-16);
+  border-top-right-radius: var(--radius-16);
+}
+
+.ready__heading {
+  color: var(--neutral-0);
+  text-align: center;
+  margin-bottom: var(--spacing-500);
+}
+
+.ready__btn {
+  margin-bottom: var(--spacing-300);
 }
 
 /* TABLET VIEW */
@@ -530,7 +563,7 @@ em {
     padding-top: var(--spacing-400);
   }
 
-  /* TABLET: HERO SECTION */
+  /* TABLET: HERO */
   .hero {
     padding-top: var(--spacing-800);
   }
@@ -559,7 +592,7 @@ em {
     box-shadow: -5.21px 5.21px var(--box-shadow-color);
   }
 
-  /* TABLET: READ TOGETHER & NOT AVERAGE SECTIONS */
+  /* TABLET: READ TOGETHER & NOT AVERAGE */
   .read-together__image,
   .not-average__image {
     border-radius: var(--radius-20);
@@ -585,7 +618,7 @@ em {
     bottom: var(--spacing-400);
   }
 
-  /* TABLET: JOURNEY SECTION */
+  /* TABLET: JOURNEY */
   .journey {
     gap: var(--spacing-600);
     padding: var(--spacing-1000) var(--spacing-400);
@@ -601,7 +634,7 @@ em {
     margin-bottom: var(--spacing-400);
   }
 
-  /* TABLET: MEMBERSHIP SECTION */
+  /* TABLET: MEMBERSHIP & TESTIMONIAL */
   .membership__heading {
     margin-bottom: var(--spacing-500);
   }
@@ -610,6 +643,11 @@ em {
   .testimonial__quote {
     font-size: var(--font-size-l);
     line-height: 1.3;
+  }
+
+  /* TABLET: READY */
+  .ready {
+    padding: var(--spacing-800) 0;
   }
 }
 
@@ -722,5 +760,10 @@ em {
 
   .testimonial__quote {
     text-align: center;
+  }
+
+  /* DESKTOP: READY */
+  .ready {
+    grid-column: span 2;
   }
 }
