@@ -535,7 +535,6 @@ em {
   margin-bottom: var(--spacing-300);
 }
 
-/* FOOTER */
 .footer {
   font-family: "Martian Mono", monospace;
   font-size: var(--font-size-xxs);
@@ -687,9 +686,15 @@ em {
     line-height: 1.3;
   }
 
-  /* TABLET: READY */
+  /* TABLET: READY & FOOTER */
   .ready {
     padding: var(--spacing-800) 0;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--spacing-300) 0;
   }
 }
 
