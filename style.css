@@ -128,6 +128,7 @@ h2,
 h3 {
   color: var(--neutral-900);
   font-family: "Martian Mono", monospace;
+  text-wrap: balance;
   margin-bottom: var(--spacing-300);
 }
 
@@ -317,7 +318,7 @@ em {
 }
 
 .hero__text {
-  max-width: 70ch;
+  max-width: 52ch;
   margin-bottom: var(--spacing-400);
 }
 
@@ -361,7 +362,7 @@ em {
 .circle::after {
   content: "";
   background: url(./assets/images/pattern-circle.png) no-repeat;
-  /* background-size: contain; */
+  background-size: contain;
   position: absolute;
   top: calc(var(--spacing-025) * -1);
   bottom: calc(var(--spacing-025) * -1);
@@ -716,6 +717,10 @@ em {
     grid-column: span 2;
     grid-template-columns: subgrid;
     gap: inherit;
+  }
+
+  .ready-together__checklist {
+    max-width: 26rem;
   }
 
   .read-together__image,
