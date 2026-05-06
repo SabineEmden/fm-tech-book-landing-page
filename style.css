@@ -491,19 +491,15 @@ em {
 }
 
 /* READY & FOOTER */
-.ready,
-.footer {
-  color: var(--neutral-0);
-  background-color: var(--neutral-900);
-}
 
 .ready {
+  anchor-name: --ready;
   justify-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--neutral-0);
   padding: var(--spacing-600) 0 var(--spacing-800);
-  position: relative;
   max-width: 47rem;
 }
 
@@ -513,8 +509,10 @@ em {
   background-image: url(./assets/images/pattern-dark-bg.svg);
   width: 100vw;
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: anchor(--ready top);
+  right: anchor(--ready right);
+  bottom: anchor(--footer bottom);
+  left: anchor(--ready left);
   /* See: https://css-tricks.com/full-bleed/ */
   left: 50%;
   right: 50%;
@@ -536,10 +534,12 @@ em {
 }
 
 .footer {
+  anchor-name: --footer;
   font-family: "Martian Mono", monospace;
   font-size: var(--font-size-xxs);
   line-height: 1.2;
   letter-spacing: -1px;
+  color: var(--neutral-0);
   width: 100%;
 }
 
@@ -548,9 +548,10 @@ em {
   flex-direction: column;
   gap: var(--spacing-200);
   align-items: center;
+  text-align: center;
   width: 100%;
   border-top: 1px solid var(--neutral-700);
-  padding: var(--spacing-300) var(--spacing-400);
+  padding: var(--spacing-300) 0;
 }
 
 .social-links {
@@ -694,7 +695,6 @@ em {
   .footer__container {
     flex-direction: row;
     justify-content: space-between;
-    padding: var(--spacing-300) 0;
   }
 }
 
