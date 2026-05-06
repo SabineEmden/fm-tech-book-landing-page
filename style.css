@@ -296,8 +296,7 @@ em {
 
 .hero::before {
   content: "";
-  background-color: var(--neutral-100);
-  background-image: url(./assets/images/pattern-light-bg.svg);
+  background: url(./assets/images/pattern-light-bg.svg) var(--neutral-100);
   width: 100vw;
   position: absolute;
   top: calc(-2.25rem - var(--spacing-300));
@@ -361,9 +360,8 @@ em {
 
 .circle::after {
   content: "";
-  background-image: url(./assets/images/pattern-circle.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url(./assets/images/pattern-circle.png) no-repeat;
+  /* background-size: contain; */
   position: absolute;
   top: calc(var(--spacing-025) * -1);
   bottom: calc(var(--spacing-025) * -1);
@@ -499,8 +497,7 @@ em {
 
 .ready::before {
   content: "";
-  background-color: var(--neutral-900);
-  background-image: url(./assets/images/pattern-dark-bg.svg);
+  background: url(./assets/images/pattern-dark-bg.svg) var(--neutral-900);
   width: 100vw;
   position: absolute;
   top: anchor(--ready top);
