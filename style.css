@@ -1,4 +1,3 @@
-/* convert variable fonts online: https://dplugins.com/convert-variable-fonts-online/ */
 @font-face {
   font-family: "Martian Mono";
   font-weight: 100 800;
@@ -27,7 +26,6 @@
   --light-salmon-500: #fea36f;
   --light-salmon-100: #ffe2d1;
   --light-salmon-50: #fff5ef;
-
   --text-gradient: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
   --gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
   --gradient-alt: linear-gradient(90deg, #385159 0%, #062630 100%);
@@ -130,7 +128,6 @@ h2,
 h3 {
   color: var(--neutral-900);
   font-family: "Martian Mono", monospace;
-  /* text-wrap: balance; */
   margin-bottom: var(--spacing-300);
 }
 
@@ -178,7 +175,6 @@ em {
   aspect-ratio: 1;
 }
 
-/* See https://www.a11y-collective.com/blog/visually-hidden/ */
 .sr-only {
   border: 0;
   clip-path: inset(50%);
@@ -251,7 +247,6 @@ em {
   max-width: none; /* prevents the image from shrinking */
 }
 
-/* See https://web.dev/articles/creative-list-styling */
 .checklist {
   --checklist-gap: var(--spacing-175);
   --checklist-marker: 1.75rem;
@@ -316,7 +311,6 @@ em {
 }
 
 .hero__heading {
-  /* See: https://fossheim.io/writing/posts/css-text-gradient/ */
   background-image: var(--text-gradient);
   background-clip: text;
   color: transparent;
@@ -513,7 +507,6 @@ em {
   right: anchor(--ready right);
   bottom: anchor(--footer bottom);
   left: anchor(--ready left);
-  /* See: https://css-tricks.com/full-bleed/ */
   left: 50%;
   right: 50%;
   margin-left: -50vw;
