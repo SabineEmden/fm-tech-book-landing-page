@@ -81,6 +81,10 @@
   margin: 0;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -94,7 +98,6 @@ body {
   line-height: 1.4;
   letter-spacing: -0.5px;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden; /* See: https://css-tricks.com/full-bleed/ */
 }
 
 header,
