@@ -94,7 +94,7 @@ body {
   line-height: 1.4;
   letter-spacing: -0.5px;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: hidden; /* See: https://css-tricks.com/full-bleed/ */
 }
 
 header,
@@ -298,7 +298,6 @@ em {
 .hero::before {
   content: "";
   background: url(./assets/images/pattern-light-bg.svg) var(--neutral-100);
-  width: 100vw;
   position: absolute;
   top: calc(-2.25rem - var(--spacing-300));
   bottom: 0;
@@ -484,7 +483,6 @@ em {
 }
 
 /* READY & FOOTER */
-
 .ready {
   anchor-name: --ready;
   justify-self: center;
@@ -502,13 +500,7 @@ em {
   width: 100vw;
   position: absolute;
   top: anchor(--ready top);
-  right: anchor(--ready right);
   bottom: anchor(--footer bottom);
-  left: anchor(--ready left);
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   z-index: -1;
   border-top-left-radius: var(--radius-16);
   border-top-right-radius: var(--radius-16);
