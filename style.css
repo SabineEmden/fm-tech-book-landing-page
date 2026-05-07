@@ -602,9 +602,8 @@ em {
 
   .hero::after {
     content: "";
-    background-image: url(./assets/images/pattern-glow.svg);
-    background-position: bottom -542px right -542px;
-    background-repeat: no-repeat;
+    background: url(./assets/images/pattern-glow.svg) bottom -542px right -542px
+      no-repeat;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -636,8 +635,7 @@ em {
 
   .not-average::after {
     content: "";
-    background-image: url(./assets/images/logos-tech.svg);
-    background-repeat: no-repeat;
+    background: url(./assets/images/logos-tech.svg) no-repeat;
     background-size: contain;
     position: absolute;
     height: 9rem;
