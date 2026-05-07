@@ -44,6 +44,8 @@ Users should be able to:
 
 ## My process
 
+I chose this challenge to stretch my CSS layout skills and get additional practice after I completed the Frontend Mentor learning path [Building responsive layouts](https://www.frontendmentor.io/learning-paths/building-responsive-layouts--z1qCXVqkD).
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -54,35 +56,51 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Working through this project, I got lots of practice working with CSS pseudo-elements and positioning to create decorative backgrounds.
 
-To see how you can add code snippets, see below:
+The most challenging was the dark patterned background that covers the last section of the main content area and the page footer. It is similar to the light patterned background behind the page header and the hero section with the added challenge of the height of the footer not being fixed. Both background cover the full viewport width.
+
+I used a `::before` pseudo-element on the last section of the main content and anchor positioning with anchors on that section and on the page footer. To extend the background over the full viewport width, I added `width: 100vw`.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<main>
+  <!-- main page content -->
+  <section class="ready">
+    <!-- section content -->
+  </section>
+</main>
+<footer class="footer">
+  <!-- footer content -->
+</footer>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.ready {
+  anchor-name: --ready;
+}
+
+.ready::before {
+  content: "";
+  background: url(./assets/images/pattern-dark-bg.svg) var(--neutral-900);
+  position: absolute;
+  top: anchor(--ready top);
+  bottom: anchor(--footer bottom);
+  width: 100vw;
+  z-index: -1;
+  border-top-left-radius: var(--radius-16);
+  border-top-right-radius: var(--radius-16);
+}
+
+.footer {
+  anchor-name: --footer;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Using `width: 100vw` causes an issue if the page has a vertical classic scrollbar. The classic scrollbar takes up space, which makes `100vw` larger than the viewport width and causes the page to overflow horizontally by a small amount. This is know as the [classic scrollbar problem](https://www.smashingmagazine.com/2023/12/new-css-viewport-units-not-solve-classic-scrollbar-problem/). I solved it by setting `scrollbar-gutter: stable` on the `<html>` element.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+This solution has a single HTML file with 304 lines of code and a single CSS style sheet with 804 lines of code. For anything more complex than this landing page, I would want to look into better organizing my code by using multiple smaller stylesheets.
 
 ### Useful resources
 
@@ -90,6 +108,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Essential Visually Hidden CSS Techniques for Web Accessibility](https://www.a11y-collective.com/blog/visually-hidden/) by Team A11Y Collective - This article describes a modern CSS technique to hide content visually using clipping instead of positioning.
 - [Creative list styling](https://web.dev/articles/creative-list-styling) by Michelle Barker for web.dev - This article looks at styling lists with custom markers and counters.
 - [Full Bleed](https://css-tricks.com/full-bleed/) by Chris Coyier for CSS-Tricks - This article discusses techniques for having a full-width element within a constrained-width column.
+- [New CSS Viewport Units Do Not Solve The Classic Scrollbar Problem](https://www.smashingmagazine.com/2023/12/new-css-viewport-units-not-solve-classic-scrollbar-problem/) by Śime Vidas for Smashing Magazine - I learned a lot about viewport units and scrollbars from this article, including how to solve the classic scrollbar problem.
 - [How to add a gradient overlay to text with CSS](https://fossheim.io/writing/posts/css-text-gradient/) by Sarah L. Fossheim- This article describes how the add a gradient overlay to a text element.
 - [The Basics of Anchor Positioning](https://ishadeed.com/article/anchor-positioning/) by Ahmad Shadeed - This article is a good introduction into the basics of CSS anchor positioning.
 - [CSS Anchor Positioning Guide](https://css-tricks.com/css-anchor-positioning-guide/) by Juan Diego Rodríguez for CSS-Tricks - This guide is a comprehensive reference for CSS anchor positioning. It's were I found out I could use two anchors for one element.
