@@ -59,11 +59,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -100,10 +95,12 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [Convert Variable Fonts Online](https://dplugins.com/convert-variable-fonts-online/) by DPlugins - This tool helped me convert the variable fonts from TTF to WOFF2.
-- [Essential Visually Hidden CSS Techniques for Web Accessiblity](https://www.a11y-collective.com/blog/visually-hidden/) by Team A11Y Collective - This article describes a modern CSS technique to hide content visually using clipping instead of positioning.
+- [Essential Visually Hidden CSS Techniques for Web Accessibility](https://www.a11y-collective.com/blog/visually-hidden/) by Team A11Y Collective - This article describes a modern CSS technique to hide content visually using clipping instead of positioning.
 - [Creative list styling](https://web.dev/articles/creative-list-styling) by Michelle Barker for web.dev - This article looks at styling lists with custom markers and counters.
 - [Full Bleed](https://css-tricks.com/full-bleed/) by Chris Coyier for CSS-Tricks - This article discusses techniques for having a full-width element within a constrained-width column.
 - [How to add a gradient overlay to text with CSS](https://fossheim.io/writing/posts/css-text-gradient/) by Sarah L. Fossheim- This article describes how the add a gradient overlay to a text element.
+- [The Basics of Anchor Positioning](https://ishadeed.com/article/anchor-positioning/) by Ahmad Shadeed - This article is a good introduction into the basics of CSS anchor positioning.
+- [CSS Anchor Positioning Guide](https://css-tricks.com/css-anchor-positioning-guide/) by Juan Diego Rodríguez for CSS-Tricks - This guide is a comprehensive reference for CSS anchor positioning. It's were I found out I could use two anchors for one element.
 
 ## Author
 
