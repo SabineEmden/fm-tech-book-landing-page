@@ -58,7 +58,7 @@ I chose this challenge to stretch my CSS layout skills and get additional practi
 
 Working through this project, I got lots of practice working with CSS pseudo-elements and positioning to create decorative backgrounds.
 
-The most challenging was the dark patterned background that covers the last section of the main content area and the page footer. It is similar to the light patterned background behind the page header and the hero section with the added challenge of the height of the footer not being fixed. Both background cover the full viewport width.
+The most challenging one was the dark patterned background that covers the last section of the main content area and the page footer. It is similar to the light patterned background behind the page header and the hero section with the added challenge of the variable height of the footer. Both backgrounds cover the full viewport width.
 
 I used a `::before` pseudo-element on the last section of the main content and anchor positioning with anchors on that section and on the page footer. To extend the background over the full viewport width, I added `width: 100vw`.
 
@@ -96,7 +96,7 @@ I used a `::before` pseudo-element on the last section of the main content and a
 }
 ```
 
-Using `width: 100vw` causes an issue if the page has a vertical classic scrollbar. The classic scrollbar takes up space, which makes `100vw` larger than the viewport width and causes the page to overflow horizontally by a small amount. This is know as the [classic scrollbar problem](https://www.smashingmagazine.com/2023/12/new-css-viewport-units-not-solve-classic-scrollbar-problem/). I solved it by setting `scrollbar-gutter: stable` on the `<html>` element.
+Using `width: 100vw` causes an issue if the page has a vertical classic scrollbar. The classic scrollbar takes up space, which makes `100vw` larger than the viewport width and causes the page to overflow horizontally. This is know as the [classic scrollbar problem](https://www.smashingmagazine.com/2023/12/new-css-viewport-units-not-solve-classic-scrollbar-problem/). I solved it by setting `scrollbar-gutter: stable` on the `<html>` element.
 
 ### Continued development
 
@@ -110,7 +110,6 @@ This solution has a single HTML file with 304 lines of code and a single CSS sty
 - [Full Bleed](https://css-tricks.com/full-bleed/) by Chris Coyier for CSS-Tricks - This article discusses techniques for having a full-width element within a constrained-width column.
 - [New CSS Viewport Units Do Not Solve The Classic Scrollbar Problem](https://www.smashingmagazine.com/2023/12/new-css-viewport-units-not-solve-classic-scrollbar-problem/) by Śime Vidas for Smashing Magazine - I learned a lot about viewport units and scrollbars from this article, including how to solve the classic scrollbar problem.
 - [How to add a gradient overlay to text with CSS](https://fossheim.io/writing/posts/css-text-gradient/) by Sarah L. Fossheim- This article describes how the add a gradient overlay to a text element.
-- [The Basics of Anchor Positioning](https://ishadeed.com/article/anchor-positioning/) by Ahmad Shadeed - This article is a good introduction into the basics of CSS anchor positioning.
 - [CSS Anchor Positioning Guide](https://css-tricks.com/css-anchor-positioning-guide/) by Juan Diego Rodríguez for CSS-Tricks - This guide is a comprehensive reference for CSS anchor positioning. It's were I found out I could use two anchors for one element.
 
 ## Author
