@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/tech-book-club-landing-page-with-anchor-positioning-4zhhAl_NwO)
 - [Live site](https://sabineemden.github.io/fm-tech-book-landing-page/)
 
 ## My process
@@ -100,7 +100,7 @@ Using `width: 100vw` causes an issue if the page has a vertical classic scrollba
 
 ### Continued development
 
-This solution has a single HTML file with 304 lines of code and a single CSS style sheet with 804 lines of code. For anything more complex than this landing page, I would want to look into better organizing my code by using multiple smaller stylesheets.
+This solution has a single HTML file with 304 lines of code and a single CSS style sheet with 804 lines of code. For anything more complex than this landing page, I would want to look into better organizing my code by using multiple smaller stylesheets or better tooling.
 
 ### Useful resources
 
