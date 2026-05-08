@@ -156,8 +156,8 @@ h3 {
   letter-spacing: -1px;
 }
 
-ul[role="list"],
-ol[role="list"] {
+ul,
+ol {
   list-style: none;
   padding: 0;
 }
