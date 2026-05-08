@@ -112,6 +112,10 @@ This solution has a single HTML file with 304 lines of code and a single CSS sty
 - [How to add a gradient overlay to text with CSS](https://fossheim.io/writing/posts/css-text-gradient/) by Sarah L. Fossheim- This article describes how the add a gradient overlay to a text element.
 - [CSS Anchor Positioning Guide](https://css-tricks.com/css-anchor-positioning-guide/) by Juan Diego Rodríguez for CSS-Tricks - This guide is a comprehensive reference for CSS anchor positioning. It's were I found out I could use two anchors for one element.
 
+### AI Collaboration
+
+I did not use any AI tools during this project other than the AI overview in Google Search.
+
 ## Author
 
 I'm an aspiring web developer and a former chemist. What I bring from chemistry to software development is a systematic approach to problem solving and the perseverance to not give up easily.
