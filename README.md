@@ -114,7 +114,7 @@ This solution has a single HTML file with 304 lines of code and a single CSS sty
 
 ### AI Collaboration
 
-I did not use any AI tools during this project other than the AI overview in Google Search.
+I did not use any AI tools during this project other than the AI overview in Google Search and, after I submitted my solution, Frontend Mentor's solution report.
 
 ## Author
 
