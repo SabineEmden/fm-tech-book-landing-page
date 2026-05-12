@@ -179,15 +179,14 @@ em {
   aspect-ratio: 1;
 }
 
-.sr-only {
-  border: 0;
-  clip-path: inset(50%);
-  height: 1px;
-  margin: 0;
-  overflow: hidden;
+.sr-only:not(:focus):not(:active) {
   position: absolute;
-  white-space: nowrap;
   width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0); /* Legacy for Internet Explorer */
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 /* COMPONENTS */
@@ -335,7 +334,7 @@ em {
 }
 
 .hero__image img {
-  aspect-ratio: auto;
+  aspect-ratio: auto; /* overrides aspect-ratio on .image class */
 }
 
 /* READ TOGETHER & NOT AVERAGE */
