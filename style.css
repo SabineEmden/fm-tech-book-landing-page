@@ -32,12 +32,12 @@
   --box-shadow-color: #dfedf3;
 
   --font-size-xxs: 0.875rem; /* 14px */
-  --font-size-xs: 1rem; /* 16px */
+  --font-size-xs: 1rem; /* 16px, changes for tablet */
   --font-size-s: 1.25rem; /* 20px */
   --font-size-m: 1.5rem; /* 24px */
-  --font-size-l: 1.5rem; /* 24px */
-  --font-size-xl: 2.125rem; /* 34px */
-  --font-size-xxl: 2.375rem; /* 38px */
+  --font-size-l: 1.5rem; /* 24px, changes for tablet */
+  --font-size-xl: 2.125rem; /* 34px, changes for tablet */
+  --font-size-xxl: 2.375rem; /* 38px, changes for tablet */
 
   --spacing-025: 0.125rem; /* 2px */
   --spacing-050: 0.25rem; /* 4px */
